@@ -14,7 +14,7 @@ A simple and customizable password generator built with HTML, CSS, and JavaScrip
 
 To see the application in action, watch the demo video:
 
-[Download Demo Video](./demo.mp4)
+[Download Demo Video](./demo.mov)
 
 Alternatively, clone the repository and run the application locally.
 
