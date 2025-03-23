@@ -1,74 +1,138 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     border: none;
     outline: none;
 }
-body{
+
+body {
     font-family: 'Courier New', Courier, monospace;
-    background-color: rgb(2,2,35);
+    background-color: rgb(2, 2, 35);
     color: white;
-    height: 100vh;
-}
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-#container{
-    padding: 30px;
-    border: 1px solid white;
-    border-radius: 10px;
-}
-form{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    padding: 20px;
+    height: 100vh;
 }
-h2{
+
+#container {
+    background-color: rgb(22, 22, 40);
+    padding: 40px;
+    border: 2px solid rgb(72, 72, 115);
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #f3f3f3;
+}
+
+#generated-password {
+    padding: 12px;
     margin-bottom: 20px;
+    background-color: #1e1e3f;
+    color: #f3f3f3;
+    border: 1px solid rgb(72, 72, 115);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    word-wrap: break-word;
 }
-.button-group{
+
+.button-group {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
-} 
-label{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+    margin-bottom: 25px;
 }
-input[type=text]{
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-}
-button{
-    border: 1px solid white;
-    padding: 2px;
-    border-radius: 5px;
+
+button {
+    padding: 12px 20px;
+    border-radius: 8px;
     background-color: rgb(104, 98, 98);
     color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 48%;
 }
-input[type=number]{
-    width: 40px;
-    margin-bottom: 5px;
-    /* border:  solid white; */
-    border-radius: 4px;
+
+button:hover {
+    background-color: #ff77a9;
+    color: black;
 }
-input[type=checkbox]{
-    margin-bottom: 5px;
+
+label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #f0f0f0;
 }
-button:hover{
-    background-color: pink;
-    color: black
+
+input[type="text"] {
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #333;
+    color: #f3f3f3;
+    border: 1px solid rgb(72, 72, 115);
+    font-size: 1rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
 }
-@media screen and (max-width:576px){
-    #container{
+
+input[type="text"]:focus {
+    background-color: #444;
+}
+
+input[type="number"],
+input[type="checkbox"] {
+    border-radius: 8px;
+    background-color: #333;
+    border: 1px solid rgb(72, 72, 115);
+    color: white;
+}
+
+input[type="number"] {
+    padding: 8px;
+    width: 60px;
+}
+
+input[type="checkbox"] {
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 576px) {
+    #container {
+        padding: 15px;
+        width: 90%;
+    }
+
+    button {
+        font-size: 0.9rem;
         padding: 10px;
+    }
+
+    input[type="number"] {
+        width: 50px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
     }
 }
